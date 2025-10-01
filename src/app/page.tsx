@@ -129,7 +129,12 @@ const FloatingText: React.FC<{
 
 export default function Home() {
     const rubiksCubeRef = useRef<HTMLDivElement>(null);
-    const rubiksCubeAppRef = useRef<any>(null);
+    const rubiksCubeAppRef = useRef<{
+        start: () => void;
+        stop: () => void;
+        boundOnWindowResize?: (() => void) | null;
+        renderer?: THREE.WebGLRenderer | null;
+    } | null>(null);
     const [literatureShifted, setLiteratureShifted] = useState(false);
     const [designShifted, setDesignShifted] = useState(false);
     const [aiShifted, setAiShifted] = useState(false);
@@ -221,7 +226,7 @@ export default function Home() {
 
                             const edges = new THREE.LineSegments(new THREE.EdgesGeometry(geometry), edgeMaterial);
                             cube.add(edges);
-                            (cube as any).isTwitching = false;
+                            (cube as THREE.Object3D & { isTwitching?: boolean }).isTwitching = false;
                             this.rubiksCube.add(cube);
                             this.cubeletOriginalPositions.push(position.clone());
                         }
