@@ -125,7 +125,7 @@ const MapComponent: React.FC<{ className?: string }> = ({ className = '' }) => {
                 const geojson = L.geoJson(geoData, {
                     style: defaultStyle,
                     onEachFeature: (feature: GeoJSON.Feature<GeoJSON.Geometry, IFeatureProperties>, layer) => {
-                        (layer as any).feature = feature; // 保持 feature 引用
+                        (layer as L.Layer & { feature?: GeoJSON.Feature<GeoJSON.Geometry, IFeatureProperties> }).feature = feature; // 保持 feature 引用
                         layer.on({
                             mouseover: () => {
                                 if (!geojsonRef.current?.selectedLayer) {
