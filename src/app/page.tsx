@@ -443,13 +443,13 @@ export default function Home() {
                 <div className="regarding-text">
                     <div className="text-wrapper">
                         <h1>Regarding Literature</h1>
-                        <p>I began writing classical Chinese regulated verse at age 13, simultaneously composing and studying texts. My greatest inspirations came from the Book of Songs, Yuefu poetry, and Xin Qiji. Some of my poems have been published. I started studying philosophy in high school, but only after extensive exploration of politics, economics, and history. My philosophical journey began with S.T. Stumpf's thick History of Western Philosophy, progressing all the way to Lacanian psychoanalysis. The spirit of Marx has profoundly influenced me. By university, my prose writing finally broke free from the shackles of established writing styles, as I practiced the principle that "there is no fixed form in writing, with vividness being the most valuable." During moments of inspiration, I even won Tongji University's top literary prize. However, I no longer read poetry, philosophy, or prose. Currently, I am focusing on learning fiction writing.</p>
+                        <p>I began writing classical Chinese regulated verse at age 13, simultaneously composing and studying texts. My greatest inspirations came from the Book of Songs, Yuefu poetry, and Xin Qiji. Some of my poems have been published. I started studying philosophy in high school, but only after extensive exploration of politics, economics, and history. My philosophical journey began with S.T. Stumpf&apos;s thick History of Western Philosophy, progressing all the way to Lacanian psychoanalysis. The spirit of Marx has profoundly influenced me. By university, my prose writing finally broke free from the shackles of established writing styles, as I practiced the principle that &quot;there is no fixed form in writing, with vividness being the most valuable.&quot; During moments of inspiration, I even won Tongji University&apos;s top literary prize. However, I no longer read poetry, philosophy, or prose. Currently, I am focusing on learning fiction writing.</p>
                     </div>
                 </div>
                 <div className={`regarding-chinese ${literatureShifted ? 'visible' : ''}`}>
                     <div className="text-wrapper">
                         <h1>关于文学</h1>
-                        <p>我13岁开始写中国古典的格律诗，边写边读，最爱《诗经》乐府辛弃疾。诗作偶有发表。高中开始学哲学，但先广泛涉猎政治经济与历史，而后才从斯通普夫厚厚的《西方哲学史》开始，一直学到拉康精神分析。马克思的气概对我影响颇深。到大学之后，散文创作终于打破文风枷锁，躬行"文无定格，贵在鲜活"之道。灵光乍现的时候，也曾得过同济的第一。诗歌、哲学、散文，现在都不读了。现在学习小说。</p>
+                        <p>我13岁开始写中国古典的格律诗，边写边读，最爱《诗经》乐府辛弃疾。诗作偶有发表。高中开始学哲学，但先广泛涉猎政治经济与历史，而后才从斯通普夫厚厚的《西方哲学史》开始，一直学到拉康精神分析。马克思的气概对我影响颇深。到大学之后，散文创作终于打破文风枷锁，躬行“文无定格，贵在鲜活”之道。灵光乍现的时候，也曾得过同济的第一。诗歌、哲学、散文，现在都不读了。现在学习小说。</p>
                     </div>
                 </div>
             </div>

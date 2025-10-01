@@ -1,1 +1,1 @@
-This is a portfolio website built with Next.js and Three.js
+This is my portfolio website built with Next.js and Three.js
